@@ -15,7 +15,7 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 500, height: 500)
 
-canvas.defaultBorderWidth = 7
+canvas.defaultBorderWidth = 5
 
 for x in stride (from: 25, through: 475, by: 50) {
     for y in stride(from: 475, through: 25, by: -50) {
@@ -23,9 +23,21 @@ for x in stride (from: 25, through: 475, by: 50) {
         canvas.fillColor = Color.white
         canvas.drawEllipse(centreX: x, centreY: y, width: 25, height: 25)
         
+        let randomvalue = random(from: 1, toButNotIncluding: 5)
         // black
         canvas.fillColor = Color.black
-        canvas.drawEllipse(centreX: x + 15, centreY: y, width: 25, height: 25)
+        canvas.drawEllipse(centreX: x + 10, centreY: y, width: 25, height: 25)
+        
+        canvas.fillColor = Color.black
+        canvas.drawEllipse(centreX: x - 10, centreY: y, width: 25, height: 25)
+        
+        canvas.fillColor = Color.black
+        canvas.drawEllipse(centreX: x, centreY: y + 10, width: 25, height: 25)
+        
+        canvas.fillColor = Color.black
+        canvas.drawEllipse(centreX: x, centreY: y - 10, width: 25, height: 25)
+        
+        
     }
     
 }
