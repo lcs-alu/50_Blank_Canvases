@@ -22,8 +22,19 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+// If a park is selling tickects for people, what is the total revenue?
 
+// Create an interger of people
+var theNumberOfPeople : Int = 100
+
+// Create an double of the price of tickects
+var thePriceOfTickects : Int = 10
+
+// The total revenue
+var theTotalRevenue : Int = theNumberOfPeople * thePriceOfTickects
+
+// Print the total revenue
+print(theTotalRevenue)
 
 
 /*:
