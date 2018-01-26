@@ -22,7 +22,17 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+// Set a name for the store
+let theName = "many things"
+
+// Set the total number of packs in the store
+var numberOfPacks : Double = 100.5
+
+// Set the average weight of each pack
+var averageWeighOfEachPack : Double = 10.47
+
+// Find the total weight
+var totalWeight : Double = numberOfPacks * averageWeighOfEachPack
 
 
 
